@@ -1,0 +1,13 @@
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27| stack char array (len 28)
+                                            a  b  c  d  e  f  g  h  i  j | input string in char
+										sa b  c  d  f  e  gn                                 | first iteration (iter1 < 7) s-start, e-end
+						 sh i	jt	                                                   | second iteration (iter1 >= 7) s-start, e-end
+
+                                            i  n  p  u  t  i  n  p  u  t | input string in char example
+										si n  p  u  t  i  en                                 | first iteration (iter1 < 7) s-start, e-end
+						 sp u	et	                                                   | second iteration (iter1 >= 7) s-start, e-end
+						   		 		                   0                               | terminating zero 
+						  p	u	t i	 n  p  u  t  i  n  0                               | result of second stage
+							0 1 2 3  4  5  6  7  8  9  end
+						                                a  j  g  o  b  i  w  b  p  f | secret phrase input
+						  b p f a  j  g  o  b  i  w  0                               | secret phrase final
